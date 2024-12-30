@@ -1,0 +1,171 @@
+.weatherContainer {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #f3540a; 
+}
+
+.header span {
+  font-size: 1.2rem; 
+  font-weight: 500;
+  color: #f8f9fa;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+
+.flagIcon {
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+.weatherCondition {
+  float: left;
+  width: 20%;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.weatherIcon {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+}
+
+.data {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #666;
+  display: grid;
+  width: 100%;
+}
+
+.data strong {
+  color: #333;
+}
+
+.basicInfo {
+  margin-bottom: 20px;
+}
+
+.basicInfo div {
+  display: inline;
+}
+
+.mybutton {
+  display: inline-block;
+  padding: 12px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.mybutton:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.mybutton:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+.mybutton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+
+.moreDetailsButton {
+  width: auto;
+  height: auto;
+  float: left;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.temperature {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0051ff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid;
+  overflow: hidden; 
+  z-index: 1;
+}
+
+.temperature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/cold1.png');
+  background-size: contain;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+
+.temperatureIcon {
+  /* width: auto;
+    height: auto; */
+  padding: 5px 5px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+
+.temperature .temperatureContent {
+  display: inline-block;
+
+}
+
+.otherInfo {
+  transition: all 1s ease-in-out;
+  height: 300px;
+}
+
